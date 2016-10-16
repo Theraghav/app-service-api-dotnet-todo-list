@@ -9,7 +9,7 @@ using ToDoListAPI;
 
 namespace ToDoListAPI
 {
-    public partial class ToDoListDataAPI : ServiceClient<ToDoListDataAPI>, IToDoListDataAPI
+    public partial class ToDoListDataAPI20161014055200 : ServiceClient<ToDoListDataAPI20161014055200>, IToDoListDataAPI20161014055200
     {
         private Uri _baseUri;
         
@@ -41,31 +41,34 @@ namespace ToDoListAPI
         }
         
         /// <summary>
-        /// Initializes a new instance of the ToDoListDataAPI class.
+        /// Initializes a new instance of the ToDoListDataAPI20161014055200
+        /// class.
         /// </summary>
-        public ToDoListDataAPI()
+        public ToDoListDataAPI20161014055200()
             : base()
         {
             this._toDoList = new ToDoList(this);
-            this._baseUri = new Uri("http://localhost:45914");
+            this._baseUri = new Uri("https://todolistdataapi20161014055200.azurewebsites.net:443");
         }
         
         /// <summary>
-        /// Initializes a new instance of the ToDoListDataAPI class.
+        /// Initializes a new instance of the ToDoListDataAPI20161014055200
+        /// class.
         /// </summary>
         /// <param name='handlers'>
         /// Optional. The set of delegating handlers to insert in the http
         /// client pipeline.
         /// </param>
-        public ToDoListDataAPI(params DelegatingHandler[] handlers)
+        public ToDoListDataAPI20161014055200(params DelegatingHandler[] handlers)
             : base(handlers)
         {
             this._toDoList = new ToDoList(this);
-            this._baseUri = new Uri("http://localhost:45914");
+            this._baseUri = new Uri("https://todolistdataapi20161014055200.azurewebsites.net:443");
         }
         
         /// <summary>
-        /// Initializes a new instance of the ToDoListDataAPI class.
+        /// Initializes a new instance of the ToDoListDataAPI20161014055200
+        /// class.
         /// </summary>
         /// <param name='rootHandler'>
         /// Optional. The http client handler used to handle http transport.
@@ -74,15 +77,16 @@ namespace ToDoListAPI
         /// Optional. The set of delegating handlers to insert in the http
         /// client pipeline.
         /// </param>
-        public ToDoListDataAPI(HttpClientHandler rootHandler, params DelegatingHandler[] handlers)
+        public ToDoListDataAPI20161014055200(HttpClientHandler rootHandler, params DelegatingHandler[] handlers)
             : base(rootHandler, handlers)
         {
             this._toDoList = new ToDoList(this);
-            this._baseUri = new Uri("http://localhost:45914");
+            this._baseUri = new Uri("https://todolistdataapi20161014055200.azurewebsites.net:443");
         }
         
         /// <summary>
-        /// Initializes a new instance of the ToDoListDataAPI class.
+        /// Initializes a new instance of the ToDoListDataAPI20161014055200
+        /// class.
         /// </summary>
         /// <param name='baseUri'>
         /// Optional. The base URI of the service.
@@ -91,7 +95,7 @@ namespace ToDoListAPI
         /// Optional. The set of delegating handlers to insert in the http
         /// client pipeline.
         /// </param>
-        public ToDoListDataAPI(Uri baseUri, params DelegatingHandler[] handlers)
+        public ToDoListDataAPI20161014055200(Uri baseUri, params DelegatingHandler[] handlers)
             : this(handlers)
         {
             if (baseUri == null)
@@ -102,7 +106,8 @@ namespace ToDoListAPI
         }
         
         /// <summary>
-        /// Initializes a new instance of the ToDoListDataAPI class.
+        /// Initializes a new instance of the ToDoListDataAPI20161014055200
+        /// class.
         /// </summary>
         /// <param name='credentials'>
         /// Required. Credentials for authenticating with the service.
@@ -111,7 +116,7 @@ namespace ToDoListAPI
         /// Optional. The set of delegating handlers to insert in the http
         /// client pipeline.
         /// </param>
-        public ToDoListDataAPI(ServiceClientCredentials credentials, params DelegatingHandler[] handlers)
+        public ToDoListDataAPI20161014055200(ServiceClientCredentials credentials, params DelegatingHandler[] handlers)
             : this(handlers)
         {
             if (credentials == null)
@@ -127,7 +132,8 @@ namespace ToDoListAPI
         }
         
         /// <summary>
-        /// Initializes a new instance of the ToDoListDataAPI class.
+        /// Initializes a new instance of the ToDoListDataAPI20161014055200
+        /// class.
         /// </summary>
         /// <param name='baseUri'>
         /// Optional. The base URI of the service.
@@ -139,7 +145,7 @@ namespace ToDoListAPI
         /// Optional. The set of delegating handlers to insert in the http
         /// client pipeline.
         /// </param>
-        public ToDoListDataAPI(Uri baseUri, ServiceClientCredentials credentials, params DelegatingHandler[] handlers)
+        public ToDoListDataAPI20161014055200(Uri baseUri, ServiceClientCredentials credentials, params DelegatingHandler[] handlers)
             : this(handlers)
         {
             if (baseUri == null)
